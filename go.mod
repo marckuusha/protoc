@@ -1,4 +1,4 @@
-module protoc
+module github.com/marckuusha/protoc
 
 go 1.21.3
 
