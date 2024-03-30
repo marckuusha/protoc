@@ -1,0 +1,19 @@
+syntax="proto3";
+
+package hwserv;
+
+option go_package="hwserv.v1";
+
+service HWServ {
+    rpc SendMsg(SendMsgReq) returns (SendMsgResp);
+}
+
+ message SendMsgReq {
+    string user_name = 1;
+    int64 user_id = 2;
+ }
+
+ message SendMsgResp {
+    string msg = 1;
+    int32 count_client = 2;
+ }
